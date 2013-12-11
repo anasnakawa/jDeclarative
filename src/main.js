@@ -1,4 +1,4 @@
-
+	
 
 	// parse bindings
 	// --------------
@@ -21,7 +21,7 @@
 	Declarative.version = _version;
 
 	Declarative.prototype.init = function() {
-		
+
 	};
 
 	$.declarative = {
@@ -29,7 +29,7 @@
 	};
 
 	$.fn.declarative = function( options ) {
-		
+
 		// merge options
 		options = $.extend( $.declarative.defaults, options );
 

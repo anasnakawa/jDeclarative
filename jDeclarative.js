@@ -7,11 +7,11 @@
 
 (function( $ ) {
 
-    'use strict';
+  'use strict';
 
-    // injecting version via grunt
-    // ---------------------------
-    var _version = '0.0.1';
+  // injecting version via grunt
+  // ---------------------------
+  var _version = '0.0.1';	
 
 	// parse bindings
 	// --------------
@@ -34,7 +34,7 @@
 	Declarative.version = _version;
 
 	Declarative.prototype.init = function() {
-		
+
 	};
 
 	$.declarative = {
@@ -42,7 +42,7 @@
 	};
 
 	$.fn.declarative = function( options ) {
-		
+
 		// merge options
 		options = $.extend( $.declarative.defaults, options );
 

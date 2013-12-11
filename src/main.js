@@ -1,17 +1,4 @@
-/*!
- * jDeclarative.js  v0.0.1 <https://github.com/anasnakawa/jDeclarative>
- * Copyright (c) Anas Nakawa 2013 <anas.nakawa@gmail.com>
- * released under the MIT License <http://opensource.org/licenses/MIT>
- */
 
-
-(function( $ ) {
-
-    'use strict';
-
-    // injecting version via grunt
-    // ---------------------------
-    var _version = '0.0.1';
 
 	// parse bindings
 	// --------------
@@ -50,5 +37,3 @@
 			new Declarative( this, options );
 		});		
 	}
-
-})( jQuery );

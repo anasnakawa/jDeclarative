@@ -1,0 +1,28 @@
+{
+  "name": "jDeclarative",
+  "main": "jDeclarative.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/anasnakawa/jDeclarative",
+  "authors": [
+    "Anas Nakawa <anas.nakawa@gmail.com>"
+  ],
+  "description": "declarative jquery plugins in your markuo",
+  "keywords": [
+    "plugin",
+    "jquery",
+    "declarative",
+    "binding"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.0.3",
+    "jquery-ui": "~1.10.3"
+  }
+}

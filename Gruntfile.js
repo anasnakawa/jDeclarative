@@ -7,7 +7,7 @@
 module.exports = function( grunt ) {
 
 	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json')
+		pkg: grunt.file.readJSON('bower.json')
 
 		// mergin / auto injecting version number
 		// --------------------------------------
@@ -21,13 +21,13 @@ module.exports = function( grunt ) {
 					, " */"
 					, ""
 					, ""
-				  	, "(function( $ ) {"
-				  	, ""
-				  	, "  'use strict';"
-				  	, ""
-				  	, "  // injecting version via grunt"
-				  	, "  // ---------------------------"
-				  	, "  var _version = '<%= pkg.version %>';"
+			  	, "(function( $ ) {"
+			  	, ""
+			  	, "  'use strict';"
+			  	, ""
+			  	, "  // injecting version via grunt"
+			  	, "  // ---------------------------"
+			  	, "  var _version = '<%= pkg.version %>';"
 		  		].join( "\n" )
 				, footer: [
 					  "" 

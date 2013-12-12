@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+</head>
+<body>
+
+<h3> jQuery UI Datepicker </h3>
+<hr />
+<h4> no options </h4>
+<input type="text" data-plugin="datepicker: {}" />
+<h4> with button panel </h4>
+<input type="text" data-plugin="datepicker: { showButtonPanel: true }" />
+<h4> restrict date range </h4>
+<input type="text" data-plugin="datepicker: { minDate: -20, maxDate: '+1M +10D' }" />
+
+<h3> jQuery UI Slider </h3>
+<hr />
+<h4> no options </h4>
+<div data-plugin="slider: {}" ></div>
+<h4> range [ 0 - 100 ]</h4>
+<div data-plugin="slider: { range: true, min: 0, max: 100, values: [ 30, 60 ] }" ></div>
+<h4> range fixed minimum </h4>
+<div data-plugin="slider: { range: 'min', min: 0, max: 100, value: 55 }" ></div>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="../jDeclarative.js"></script>
+<script type="text/javascript">
+// calling plugin
+$('body').declarative();
+</script>
+
+</body>
+</html>

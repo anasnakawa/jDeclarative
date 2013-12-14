@@ -7,6 +7,8 @@ declarative jquery plugins in your markup
 
 just provide a `data-plugin` attribute in your markup to any element you wish to bind a jQuery plugin to it, writing an object literal into the attribute to specify plugin name / options
 
+**you write this..**
+
 ```html
 <input type="text" data-plugin="datepicker: { showButtonPanel: true, minDate: -20, maxDate: '+1M +10D' }" />
 ```

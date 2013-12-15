@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jdeclarative by anasnakawa</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jdeclarative</h1>
+        <p>declarative jquery plugins in your markup</p>
+
+        <p class="view"><a href="https://github.com/anasnakawa/jDeclarative">View the Project on GitHub <small>anasnakawa/jDeclarative</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/anasnakawa/jDeclarative/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/anasnakawa/jDeclarative/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/anasnakawa/jDeclarative">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="jdeclarative" class="anchor" href="#jdeclarative"><span class="octicon octicon-link"></span></a>jDeclarative</h1>
+
+<p>declarative jquery plugins in your markup</p>
+
+<h3>
+<a name="declaring-plugins" class="anchor" href="#declaring-plugins"><span class="octicon octicon-link"></span></a>Declaring plugins</h3>
+
+<p>just provide a <code>data-plugin</code> attribute in your markup to any element you wish to bind a jQuery plugin to it, writing an object literal into the attribute to specify plugin name / options</p>
+
+<p><strong>you write this..</strong></p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">data-plugin=</span><span class="s">"datepicker: { showButtonPanel: true, minDate: -20, maxDate: '+1M +10D' }"</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+<p><strong>instead of this..</strong></p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"datepickerInput"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+<div class="highlight highlight-js"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#datepickerInput'</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">({</span>
+  <span class="nx">minDate</span><span class="o">:</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> 
+  <span class="nx">maxDate</span><span class="o">:</span> <span class="s1">'+1M +10D'</span><span class="p">,</span>
+  <span class="nx">showButtonPanel</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">});</span>
+</pre></div>
+
+<h3>
+<a name="why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why</h3>
+
+<ul>
+<li>easier to inspect which element has a plugin, rather than looking up js / html files to figure out what plugin / dom elements relation</li>
+<li>works with all jQuery plugins!</li>
+</ul><h3>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h3>
+
+<p>inspired by KnockoutJs library</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/anasnakawa">anasnakawa</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-46473538-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>

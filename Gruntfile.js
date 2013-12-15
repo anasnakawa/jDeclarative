@@ -20,7 +20,6 @@ module.exports = function( grunt ) {
 					, " * released under the MIT License <http://opensource.org/licenses/MIT>"
 					, " */"
 					, ""
-					, ""
 			  	, "(function( $ ) {"
 			  	, ""
 			  	, "  'use strict';"

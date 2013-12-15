@@ -1,15 +1,21 @@
  
 
-  // class definition
-  // ----------------
+  // Declarative
+  // ===========
   // @param {dom} element
   // @param {object} options
   function Declarative( element, options ) {
     this.element = element;
     this.options = options;
+
+    // initialize
+    this.init();
   }
 
-
+  // init
+  // ====
+  // initialize Declarative on current dom element scope
+  // will lookup for any element that has a declarative attribute
   Declarative.prototype.init = function() {
     var self = this
     , parsedAttribute = Declarative.parseBindings( this.element.getAttribute( this.options.attr ) );
@@ -19,11 +25,17 @@
     });
   };
 
-  // store auto generated version
+  // version
+  // =======
+  // inject auto generated version
+  // read by grunt from `bower.json` file
   Declarative.version = _version;
 
-  // parse bindings
-  // --------------
+  // parseBindings
+  // =============
+  // parse declarative attribute to return an object literal
+  // containing plugin names as a key, plugin options as a value
+  // -----------------------------------------------------------
   // @param {string} attr 
   // @return {object} parsed binding
   Declarative.parseBindings = function( attr ) {
@@ -35,16 +47,17 @@
     }
     return parsed;
   }
-
   
-  // default settings
+  // defaults
+  // ========
+  // declarative global default settings
   Declarative.defaults = {
     attr: 'data-plugin'
   };
 
-
-  // jQuery plugin
-  // -------------
+  // jQuery API
+  // ==========
+  // plugin definition
   $.fn.declarative = function( options ) {
 
     // merge options
@@ -52,11 +65,10 @@
 
     return this.each( function() {
       return $( this ).find( '[{attr}]'.replace( /{attr}/, options.attr ) ).each( function() {
-        new Declarative( this, options ).init();
+        new Declarative( this, options );
       });
     });   
   }
 
-  // expose class
-  // ------------
+  // expose class to public API
   $.Declarative = Declarative;

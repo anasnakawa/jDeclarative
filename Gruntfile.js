@@ -29,7 +29,6 @@ module.exports = function( grunt ) {
 			  	, "  var _version = '<%= pkg.version %>';"
 		  		].join( "\n" )
 				, footer: [
-					  "" 
 					, ""
 					, "})( jQuery );"
 				].join( "\n" )

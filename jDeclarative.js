@@ -11,7 +11,6 @@
   // injecting version via grunt
   // ---------------------------
   var _version = '0.1.0'; 
-
   // Declarative
   // ===========
   // @param {dom} element
@@ -84,6 +83,5 @@
 
   // expose class to public API
   $.Declarative = Declarative;
-
 
 })( jQuery );

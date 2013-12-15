@@ -1,5 +1,4 @@
  
-
   // Declarative
   // ===========
   // @param {dom} element

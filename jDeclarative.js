@@ -10,7 +10,8 @@
 
   // injecting version via grunt
   // ---------------------------
-  Declarative.version = '0.1.0'; 
+  Declarative.version = '0.1.0';
+ 
   // Declarative
   // ===========
   // @param {dom} element

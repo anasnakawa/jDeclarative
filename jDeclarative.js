@@ -10,7 +10,7 @@
 
   // injecting version via grunt
   // ---------------------------
-  var _version = '0.1.0'; 
+  Declarative.version = '0.1.0'; 
   // Declarative
   // ===========
   // @param {dom} element
@@ -35,12 +35,6 @@
       $( self.element )[ plugin ]( options );
     });
   };
-
-  // version
-  // =======
-  // inject auto generated version
-  // read by grunt from `bower.json` file
-  Declarative.version = _version;
 
   // parseBindings
   // =============

@@ -26,7 +26,7 @@ module.exports = function( grunt ) {
 			  	, ""
 			  	, "  // injecting version via grunt"
 			  	, "  // ---------------------------"
-			  	, "  var _version = '<%= pkg.version %>';"
+			  	, "  Declarative.version = '<%= pkg.version %>';"
 		  		].join( "\n" )
 				, footer: [
 					, ""

@@ -24,12 +24,6 @@
     });
   };
 
-  // version
-  // =======
-  // inject auto generated version
-  // read by grunt from `bower.json` file
-  Declarative.version = _version;
-
   // parseBindings
   // =============
   // parse declarative attribute to return an object literal

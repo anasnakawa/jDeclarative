@@ -26,6 +26,12 @@ $('#datepickerInput').datepicker({
 });
 ```
 
+**you can bind multiple plugins on the same element**
+
+```html
+<input type="text" placeholder="country lookup" data-plugin="placeholder: {}, autocomplete: { source: [ 'Jordan', 'Syria', 'Egypt', 'Palestine', 'Turkey' ] }" />
+```
+
 ### Why 
 
 - easier to inspect which element has a plugin, rather than looking up js / html files to figure out what plugin / dom elements relation

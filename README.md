@@ -26,7 +26,7 @@ $('#datepickerInput').datepicker({
 });
 ```
 
-**you can bind multiple plugins on the same element**
+**you can even bind multiple plugins on the same element**
 
 ```html
 <input type="text" placeholder="country lookup" data-plugin="placeholder: {}, autocomplete: { source: [ 'Jordan', 'Syria', 'Egypt', 'Palestine', 'Turkey' ] }" />
